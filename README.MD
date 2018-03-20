@@ -20,7 +20,8 @@ this is a IntelliJ IDE plugin for support new MacBookPro
 
 |图片|说明|
 |---|----|
-|![](./resources/resources/assets/image/Rename.png){:style='background-color: #a9a9a9;'}|Rename|
+|<image src="./resources/resources/assets/image/Rename.png" style='background-color: #a9a9a9;'/>|Rename|
+|![](./resources/resources/assets/image/Rename.png)|Rename|
 |![](./resources/resources/assets/image/CommentByLine.png)|CommentByLine|
 |![](./resources/resources/assets/image/OptimizeImports.png)|OptimizeImports|
 |![](./resources/resources/assets/image/SurroundWith.png)|SurroundWith|
