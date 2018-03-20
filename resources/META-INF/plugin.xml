@@ -22,7 +22,7 @@
 
     <description><![CDATA[
       用来对最新版MacBook Pro的Touch Bar支持。 <br>
-      <image src="" />
+      <image height="250" width="250" src="https://raw.githubusercontent.com/kingsollyu/IntelliJ-Plugin-TouchBarSupport/develop/screenshot/screenshot-1.jpg" />
     ]]></description>
 
     <change-notes><![CDATA[

@@ -18,12 +18,13 @@ this is a IntelliJ IDE plugin for support new MacBookPro
 
 ## 说明
 
-|图片|说明|
-|---|----|
-|![](./resources/resources/assets/image/Rename.png)|Rename|
-|![](./resources/resources/assets/image/CommentByLine.png)|CommentByLine|
-|![](./resources/resources/assets/image/OptimizeImports.png)|OptimizeImports|
-|![](./resources/resources/assets/image/SurroundWith.png)|SurroundWith|
+<table><tbody>
+    <tr><th>图片</th><th>说明</th></tr>
+    <tr><td bgcolor="#A9A9A9"><img src="/kingsollyu/IntelliJ-Plugin-TouchBarSupport/raw/develop/resources/resources/assets/image/Rename.png"          alt="" style="max-width:100%;"></td><td>Rename</td></tr>
+    <tr><td bgcolor="#A9A9A9"><img src="/kingsollyu/IntelliJ-Plugin-TouchBarSupport/raw/develop/resources/resources/assets/image/CommentByLine.png"   alt="" style="max-width:100%;"></td><td>CommentByLine</td></tr>
+    <tr><td bgcolor="#A9A9A9"><img src="/kingsollyu/IntelliJ-Plugin-TouchBarSupport/raw/develop/resources/resources/assets/image/OptimizeImports.png" alt="" style="max-width:100%;"></td><td>OptimizeImports</td></tr>
+    <tr><td bgcolor="#A9A9A9"><img src="/kingsollyu/IntelliJ-Plugin-TouchBarSupport/raw/develop/resources/resources/assets/image/SurroundWith.png"    alt="" style="max-width:100%;"></td><td>SurroundWith</td></tr>
+</table>
 
 ## 感谢
 

@@ -20,7 +20,7 @@ import com.intellij.notification.Notification;
 import com.intellij.notification.NotificationType;
 import com.intellij.notification.Notifications;
 import com.intellij.openapi.project.Project;
-import com.intellij.openapi.project.VetoableProjectManagerListener;
+import com.intellij.openapi.project.ProjectManagerListener;
 import com.intellij.openapi.wm.WindowManager;
 import com.sollyu.java.idea.button.*;
 import com.thizzer.jtouchbar.JTouchBar;
@@ -33,7 +33,7 @@ import java.io.IOException;
 /**
  * @author sollyu
  */
-public class TouchBarProject implements VetoableProjectManagerListener {
+public class TouchBarProject implements ProjectManagerListener {
 
     private JTouchBar jTouchBar = new JTouchBar();
 
@@ -64,11 +64,6 @@ public class TouchBarProject implements VetoableProjectManagerListener {
     @Override
     public void projectClosed(Project project) {
         System.out.println("工程被关闭了");
-    }
-
-    @Override
-    public boolean canClose(@NotNull Project project) {
-        return false;
     }
 
     private Image getIcon(String iconName) throws IOException {
