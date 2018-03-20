@@ -28,6 +28,7 @@ import java.io.IOException;
 /**
  * @author sollyu
  */
+@SuppressWarnings("WeakerAccess")
 public abstract class AbstractTouchBarItem extends TouchBarItem implements TouchBarViewAction {
 
     public static final Color DEFAULT = new Color(0.21176471f, 0.21176471f, 0.21176471f);
@@ -50,7 +51,7 @@ public abstract class AbstractTouchBarItem extends TouchBarItem implements Touch
         getTouchBarButton().setImage(getIcon(getIconName()));
         getTouchBarButton().setAction(this);
         getTouchBarButton().setBezelColor(DEFAULT);
-        this.setCustomizationAllowed(true);
+        this.setCustomizationAllowed(false);
         this.setView(getTouchBarButton());
     }
 

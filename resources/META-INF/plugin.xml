@@ -52,15 +52,10 @@
         <!-- Add your actions here -->
     </actions>
 
+
     <application-components>
         <component>
-            <implementation-class>
-                com.sollyu.java.idea.TouchBarSupport
-            </implementation-class>
-            <interface-class>
-                com.sollyu.java.idea.TouchBarSupport
-            </interface-class>
+            <implementation-class>com.sollyu.java.idea.TouchBarApplicationComponent</implementation-class>
         </component>
     </application-components>
-
 </idea-plugin>

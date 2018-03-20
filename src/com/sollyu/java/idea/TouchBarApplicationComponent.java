@@ -18,27 +18,32 @@ package com.sollyu.java.idea;
 
 import com.intellij.openapi.components.ApplicationComponent;
 import com.intellij.openapi.project.ProjectManager;
+import org.jetbrains.annotations.NotNull;
 
-/**
- * @author sollyu
- */
-public class TouchBarSupport implements ApplicationComponent {
+public class TouchBarApplicationComponent implements ApplicationComponent {
 
-    private TouchBarProject touchBarProject = new TouchBarProject();
+    private TouchBarProjectManagerListener touchBarProjectManagerListener = new TouchBarProjectManagerListener();
+
+    public TouchBarApplicationComponent() {
+    }
 
     @Override
     public void initComponent() {
-        System.out.println("IntelliJ IDEA 打开了");
-        ProjectManager.getInstance().addProjectManagerListener(getTouchBarProject());
+        ProjectManager.getInstance().addProjectManagerListener(getTouchBarProjectManagerListener());
     }
 
     @Override
     public void disposeComponent() {
-        System.out.println("IntelliJ IDEA 关闭了");
-        ProjectManager.getInstance().removeProjectManagerListener(getTouchBarProject());
+        ProjectManager.getInstance().removeProjectManagerListener(getTouchBarProjectManagerListener());
     }
 
-    public TouchBarProject getTouchBarProject() {
-        return touchBarProject;
+    @Override
+    @NotNull
+    public String getComponentName() {
+        return "TouchBarApplicationComponent";
+    }
+
+    public TouchBarProjectManagerListener getTouchBarProjectManagerListener() {
+        return touchBarProjectManagerListener;
     }
 }

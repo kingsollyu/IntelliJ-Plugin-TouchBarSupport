@@ -8,7 +8,7 @@ Sorry, My English is so bad. there is no english desc. :(
 这是一个IntelliJ系列IDE的插件用来支持新款MacBookPro的Touch Bar。
 this is a IntelliJ IDE plugin for support new MacBookPro
 
-长时间的等待官方支持TouchBar却迟迟不见，无奈只好子给自足。
+长时间的等待官方支持TouchBar却迟迟不见，无奈只好自给自足了。
 
 > 代码拙劣，还请高手指点。
 
@@ -20,11 +20,20 @@ this is a IntelliJ IDE plugin for support new MacBookPro
 
 |图片|说明|
 |---|----|
-|<image src="./resources/resources/assets/image/Rename.png" style='background-color: #a9a9a9;'/>|Rename|
 |![](./resources/resources/assets/image/Rename.png)|Rename|
 |![](./resources/resources/assets/image/CommentByLine.png)|CommentByLine|
+|![](./resources/resources/assets/image/ReformatCode.png)|ReformatCode|
 |![](./resources/resources/assets/image/OptimizeImports.png)|OptimizeImports|
 |![](./resources/resources/assets/image/SurroundWith.png)|SurroundWith|
+|![](./resources/resources/assets/image/Run.png)|Run|
+
+## 安装
+
+`Perferences`-`Plugins`-`Insatll plugin form disk`
+
+## 下载
+
+<https://github.com/kingsollyu/IntelliJ-Plugin-TouchBarSupport/releases>
 
 ## 感谢
 

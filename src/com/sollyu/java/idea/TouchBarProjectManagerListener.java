@@ -25,6 +25,7 @@ import com.intellij.openapi.wm.WindowManager;
 import com.sollyu.java.idea.button.*;
 import com.thizzer.jtouchbar.JTouchBar;
 import com.thizzer.jtouchbar.common.Image;
+import com.thizzer.jtouchbar.item.TouchBarItem;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
@@ -33,7 +34,7 @@ import java.io.IOException;
 /**
  * @author sollyu
  */
-public class TouchBarProject implements ProjectManagerListener {
+public class TouchBarProjectManagerListener implements ProjectManagerListener {
 
     private JTouchBar jTouchBar = new JTouchBar();
 
@@ -55,6 +56,8 @@ public class TouchBarProject implements ProjectManagerListener {
             jTouchBar.getItems().add(new ReformatCodeTouchBarItem());
             jTouchBar.getItems().add(new OptimizeImportsTouchBarItem());
             jTouchBar.getItems().add(new SurroundWithTouchBarItem());
+            jTouchBar.getItems().add(new TouchBarItem("NSTouchBarItemIdentifierFlexibleSpace"));
+            jTouchBar.getItems().add(new RunTouchBarItem());
             jTouchBar.show(barJFrame);
         } catch (Throwable e) {
             e.printStackTrace();
