@@ -1,0 +1,66 @@
+<!--
+  ~ Copyright 2018 Sollyu
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<idea-plugin>
+    <id>com.sollyu.java.idea.touchbar.support</id>
+    <name>TouchBar Support</name>
+    <version>1.0.0</version>
+    <vendor email="king.sollyu@gmail.com" url="http://www.sollyu.com">Sollyu</vendor>
+
+    <description><![CDATA[
+      用来对最新版MacBook Pro的Touch Bar支持。 <br>
+      <image src="" />
+    ]]></description>
+
+    <change-notes><![CDATA[
+      更新内容<br>
+      <h4>1.0.0</h4>
+      <ul>
+        <li>第一个版本</li>
+      </ul>
+      <em></em>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="145.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    -->
+    <depends>com.intellij.modules.lang</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+
+    <application-components>
+        <component>
+            <implementation-class>
+                com.sollyu.java.idea.TouchBarSupport
+            </implementation-class>
+            <interface-class>
+                com.sollyu.java.idea.TouchBarSupport
+            </interface-class>
+        </component>
+    </application-components>
+
+</idea-plugin>
